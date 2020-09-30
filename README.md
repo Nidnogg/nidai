@@ -1,18 +1,24 @@
-# papura
-An artisan's notebook website, currently in development.
+# nidai studios
+![](https://i.imgur.com/hlVTvhQ.png)
 
+[Live demo available!](https://nidnogg.github.io/nidai)
+nidai studios is an open source web app showcasing the cool work of [Nidnogg](https://github.com/Nidnogg) and [Daigoro](). It is inspired by the [Hero's Journey.](https://en.wikipedia.org/wiki/Hero%27s_journey)
+
+It also incorporates the work of Henrique Vermelho's [Mood Drone](https://nidnogg.github.io/mood-drone)
+
+## Contributors
+This app was made possible by the help of:
+* [Luis Felipe Coimbra Costa](https://github.com/luisfcosta2015), the mastermind behind it all
+
+* [Daigoro](https://github.com/unangity), who solved the loop issue
 ## Usage
 
-### For back-end development:
-```psql -U postgres -d papura-db``` for booting local postgres database
-
-```npm run develop``` for development on back-end (strapi)
-
-```npm run dev``` for development on front-end.
-
- ```npm run build``` for production
+Just ```npm run dev``` for development
 
 ## Dependencies 
 
-React, Next.js, Strapi, PostgreSQL 
+next.js
 
+## Misc 
+
+```npx babel-upgrade``` could maybe be necessary for the latest Babel version to work.
