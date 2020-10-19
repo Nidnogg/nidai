@@ -1,35 +1,41 @@
 import Head from 'next/head';
 import Link from "next/link";
 import Layout from './components/layout';
+import { gsap } from "gsap";
 import React, { useState, useEffect, useRef } from 'react';
 
+
 const Home = () => {
+  const grid0 = useRef(0);
+  const grid1 = useRef(0);
+  const grid2 = useRef(0);
+
+  useEffect(() => {
+    gsap.to(grid0.current, { duration: 0.377, opacity: 1, ease:"expo"})
+    gsap.to(grid1.current, { duration: 0.557, opacity: 1, ease:"expo"})
+    gsap.to(grid2.current, { duration: 0.877, opacity: 1, ease:"expo"})
+  }, []); // crap requirement for hooks
+
+
   return (
     <Layout>
       <Head>
-
-        <title>Papura Cadernos</title>
-  
+        <title>nidai studios</title>
       </Head>
       <section className="row">
 
-        <Link href="/products/p0">
-            <a className="column">
-              <img className="line-square" src="./assets/main/mini.png" alt="compacto"/>
-            </a>
-        </Link>
+        <a ref={grid0} href="https://nidnogg.github.io/mood-drone/" className="column">
+          <img className="line-square" src="./assets/main/top0.png" alt="mood drone"/>
+        </a>
 
-        <Link href="/products/p1">
-            <a className="column">
-              <img className="line-square trad" src="./assets/main/trad.png" alt="tradicional"/>
-            </a>
-        </Link> 
+        <a ref={grid1} href="https://papuracadernos.com/" className="column">
+          <img className="line-square" src="./assets/main/top1.png" alt="papura"/>
+        </a>
 
-        <Link href="/products/p2">
-            <a className="column">
-              <img className="line-square" src="./assets/main/arti.png" alt="artistico"/>
-            </a>
-        </Link>
+        <a ref={grid2} href="https://appliedbio.com.br/" className="column">
+          <img className="line-square" src="./assets/main/top2.png" alt="appliedBio"/>
+        </a>
+        
 
 
       </section>

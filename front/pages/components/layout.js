@@ -37,13 +37,13 @@ const Layout = ({children}) => {
 
             <section className="mobile-nav-items">
               <Link href="/about">
-                <a className="nav-link">SOBRE</a>
+                <a className="nav-link">ABOUT</a>
               </Link>
               <br />
               <br />
 
               <Link href="/">
-                <a className="nav-link">LOJA</a>
+                <a className="nav-link">PORTFOLIO</a>
               </Link>
               <br />
               <br />
